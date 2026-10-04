@@ -1,0 +1,131 @@
+/* Main page */
+.counter-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  font-family: Arial, sans-serif;
+}
+
+/* Main card */
+.counter-card {
+  width: 430px;
+  padding: 45px 40px;
+  text-align: center;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Heading */
+.counter-card h1 {
+  margin: 0;
+  color: #1e293b;
+  font-size: 32px;
+}
+
+/* Subtitle */
+.subtitle {
+  margin-top: 8px;
+  margin-bottom: 30px;
+  color: #64748b;
+  font-size: 15px;
+}
+
+/* Counter circle */
+.count-circle {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+}
+
+/* Counter number */
+.count-circle span {
+  font-size: 58px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Message */
+.message {
+  margin: 15px 0 25px;
+  color: #ef4444;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.message.positive {
+  color: #16a34a;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Increment button */
+.increment {
+  background-color: #16a34a;
+}
+
+.increment:hover {
+  background-color: #15803d;
+  transform: translateY(-2px);
+}
+
+/* Decrement button */
+.decrement {
+  background-color: #ef4444;
+}
+
+.decrement:hover {
+  background-color: #dc2626;
+  transform: translateY(-2px);
+}
+
+/* Reset button */
+.reset {
+  background-color: #475569;
+}
+
+.reset:hover {
+  background-color: #334155;
+  transform: translateY(-2px);
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .counter-card {
+    width: 85%;
+    padding: 35px 20px;
+  }
+
+  .counter-card h1 {
+    font-size: 26px;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+}
